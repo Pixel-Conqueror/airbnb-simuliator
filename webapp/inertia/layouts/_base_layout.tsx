@@ -22,7 +22,7 @@ export default function BaseLayout({ children }: PropsWithChildren) {
         </AppShell.Header>
 
         <AppShell.Main
-          style={{ minHeight: 'calc(100%)', display: 'flex', justifyContent: 'center' }}
+          style={{ minHeight: 'calc(100% - 40px)', display: 'flex', justifyContent: 'center' }}
         >
           {children}
         </AppShell.Main>

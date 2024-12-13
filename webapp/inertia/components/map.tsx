@@ -33,8 +33,8 @@ export function Map({ data, centralPoint }: MapProps) {
     <MapContainer
       zoom={13}
       center={[centralPoint.latitude, centralPoint.longitude]}
-      scrollWheelZoom={false}
-      style={{ minHeight: '100%', width: '100%', flex: 1 }}
+      style={{ minHeight: '100%', width: '100%', flex: 1, borderRadius: '5px' }}
+      scrollWheelZoom
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

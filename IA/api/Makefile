@@ -10,6 +10,8 @@ init:
 install:
 	@$(PIP) install -r requirements.txt
 
-
 freeze:
 	@$(PIP) freeze > requirements.txt
+
+api:
+	@$(PYTHON) -m uvicorn main:app --reload main.py
