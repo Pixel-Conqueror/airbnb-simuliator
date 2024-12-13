@@ -51,7 +51,7 @@ export default function EstimatePage({ predictedPrice }: EstimatePageProps) {
             <>
               <Divider />
               <Text>
-                Based on over +40k properties, we estimate the price of your property at $
+                Based on over +180k properties, we estimate the price of your property at $
                 {predictedPrice
                   .toFixed(2)
                   .replace(/\d(?=(\d{3})+\.)/g, '$&,')
