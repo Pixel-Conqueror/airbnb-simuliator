@@ -15,13 +15,15 @@ export default function BaseLayout({ children }: PropsWithChildren) {
             <Anchor component={Link} href="/">
               Home
             </Anchor>
-            <Anchor component={Link} href="/create">
-              Create new reservation
+            <Anchor component={Link} href="/estimate">
+              Estimate your property
             </Anchor>
           </Group>
         </AppShell.Header>
 
-        <AppShell.Main style={{ minHeight: 'calc(100%)', display: 'flex' }}>
+        <AppShell.Main
+          style={{ minHeight: 'calc(100%)', display: 'flex', justifyContent: 'center' }}
+        >
           {children}
         </AppShell.Main>
       </AppShell>
