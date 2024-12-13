@@ -3,7 +3,7 @@
 
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
 import { createInertiaApp } from '@inertiajs/react'
-import { hydrateRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import BaseLayout from '~/layouts/_base_layout'
 import '../css/app.css'
 
@@ -27,6 +27,6 @@ createInertiaApp({
   },
 
   setup({ el, App, props }) {
-    hydrateRoot(el, <App {...props} />)
+    createRoot(el).render(<App {...props} />)
   },
 })
